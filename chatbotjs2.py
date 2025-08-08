@@ -569,9 +569,9 @@ if __name__ == "__main__":
     try:
         print(f"🔄 Lancement sur le port {port}...")
         app.launch(
-            server_name="0.0.0.0",  # Important pour Railway !
+            server_name="127.0.0.1",  # Important pour Railway !
             server_port=port,
-            share=False,  # Pas besoin de share en production
+            share=True,  # Pas besoin de share en production
             show_error=True,
             quiet=False
         )
